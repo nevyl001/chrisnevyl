@@ -56,8 +56,35 @@
 }
 
 @media (max-width: 768px) {
+  .formation {
+    margin-top: 2rem;
+  }
+
+  .formationLabel {
+    font-size: 0.68rem;
+    letter-spacing: 0.28em;
+  }
+
   .formationGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .eduCard {
+    padding: 14px 16px;
+  }
+
+  .eduInstitution {
+    font-size: 0.8rem;
+  }
+
+  .eduField {
+    font-size: 0.76rem;
+  }
+
+  .eduPeriod {
+    font-size: 0.7rem;
   }
 }
 
