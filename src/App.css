@@ -742,20 +742,20 @@ img {
   }
 
   .section-tag {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     margin-bottom: 0.75rem;
   }
 
   .section-title {
-    font-size: clamp(1.35rem, 5.5vw, 1.85rem);
+    font-size: clamp(1.5rem, 6vw, 2.1rem);
     margin-bottom: 1.75rem;
     max-width: none;
     line-height: 1.2;
   }
 
   .btn {
-    padding: 0.7rem 1.15rem;
-    font-size: 0.85rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
   }
 
   .hero {
@@ -764,20 +764,20 @@ img {
   }
 
   .hero-badge {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     margin-bottom: 1.25rem;
-    padding: 0.35rem 0.7rem;
+    padding: 0.4rem 0.75rem;
   }
 
   .hero-title {
-    font-size: clamp(1.75rem, 7.5vw, 2.35rem);
+    font-size: clamp(2rem, 8.5vw, 2.75rem);
     margin-bottom: 1rem;
     line-height: 1.08;
   }
 
   .hero-sub {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.65;
     margin-bottom: 1.5rem;
   }
 
@@ -792,11 +792,11 @@ img {
   }
 
   .hero-stat strong {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
 
   .hero-stat span {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
   }
 
   .about-grid {
@@ -805,23 +805,23 @@ img {
   }
 
   .about-text p {
-    font-size: 0.9rem;
-    line-height: 1.65;
+    font-size: 0.97rem;
+    line-height: 1.7;
     margin-bottom: 1rem;
   }
 
   .skill-card {
-    padding: 1rem 1.1rem;
+    padding: 1.1rem 1.2rem;
   }
 
   .skill-card h3 {
-    font-size: 0.88rem;
-    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.85rem;
   }
 
   .pill {
-    font-size: 0.72rem;
-    padding: 0.3rem 0.6rem;
+    font-size: 0.78rem;
+    padding: 0.35rem 0.7rem;
   }
 
   .timeline {
@@ -833,15 +833,15 @@ img {
   }
 
   .timeline-content h3 {
-    font-size: 0.95rem;
+    font-size: 1.02rem;
   }
 
   .timeline-company {
-    font-size: 0.82rem;
+    font-size: 0.88rem;
   }
 
   .timeline-desc {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
   }
 
   .timeline-item {
@@ -854,13 +854,17 @@ img {
   }
 
   .project-card h3 {
-    font-size: 1rem;
+    font-size: 1.08rem;
     padding-right: 1.5rem;
   }
 
   .project-card > p {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
     margin-bottom: 1rem;
+  }
+
+  .project-tags li {
+    font-size: 0.76rem;
   }
 
   .project-arrow {
@@ -884,24 +888,29 @@ img {
   }
 
   .contact-box .section-title {
-    font-size: clamp(1.25rem, 5vw, 1.6rem);
+    font-size: clamp(1.45rem, 5.5vw, 1.85rem);
   }
 
   .contact-text {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     margin-bottom: 1.25rem;
   }
 
   .contact-email {
-    font-size: clamp(0.82rem, 3.2vw, 1rem);
+    font-size: clamp(0.95rem, 4vw, 1.2rem);
     word-break: break-word;
-    line-height: 1.4;
+    line-height: 1.45;
     margin-bottom: 1.5rem;
     max-width: 100%;
   }
 
+  .btn-sm {
+    font-size: 0.85rem;
+    padding: 0.65rem 1rem;
+  }
+
   .contact-handle {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     width: 100%;
     text-align: center;
     margin-left: 0;
@@ -925,20 +934,28 @@ img {
 }
 
 @media (max-width: 480px) {
+  .section {
+    padding: 2.75rem 1.1rem;
+  }
+
+  .hero {
+    padding: 1.75rem 1.1rem 2.75rem;
+  }
+
   .hero-title {
-    font-size: clamp(1.55rem, 8vw, 1.9rem);
+    font-size: clamp(1.9rem, 9vw, 2.5rem);
   }
 
   .section-title {
-    font-size: 1.3rem;
+    font-size: clamp(1.45rem, 6.5vw, 1.75rem);
   }
 
   .hero-stat strong {
-    font-size: 1.2rem;
+    font-size: 1.45rem;
   }
 
   .hero-stats {
-    gap: 1rem 1.5rem;
+    gap: 1.15rem 1.75rem;
   }
 
   .hero-actions .btn {
@@ -946,6 +963,6 @@ img {
   }
 
   .contact-email {
-    font-size: 0.8rem;
+    font-size: clamp(0.92rem, 4.2vw, 1.1rem);
   }
 }
