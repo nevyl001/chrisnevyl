@@ -16,7 +16,7 @@ export const hero = {
   titleLine2: '& diseñador',
   titleLine3: 'autodidacta.',
   subtitle:
-    'Construyo experiencias web claras, rápidas y con intención — desde productos fintech hasta campañas de marca y sitios corporativos.',
+    'Diseño y código para marcas que quieren vender más en línea — ecommerce, Shopify y sitios que convierten.',
   stats: [
     { value: '7+', label: 'Años' },
     { value: '30+', label: 'Proyectos' },
@@ -106,14 +106,16 @@ export const projects = [
 
 export const skills = {
   tecnologias: [
-    'ReactJS',
+    'React',
     'JavaScript',
     'HTML5',
     'CSS3',
-    'PHP',
-    'MySQL',
+    'Vite',
     'WordPress',
     'Shopify',
+    'PHP',
+    'MySQL',
+    'Responsive UI',
   ],
   herramientas: [
     'Vercel',
