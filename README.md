@@ -1,6 +1,6 @@
-# Chris Nevyl — Sitio en Construcción
+# Chris Nevyl — Portfolio
 
-Landing page de “Sitio en Construcción” para Chris Nevyl, construida con **Vite + React** y **CSS Modules** (sin Tailwind).
+Portfolio personal de una sola página con **Vite + React** y **CSS puro** (sin Tailwind).
 
 ## Desarrollo
 
@@ -9,8 +9,6 @@ npm install
 npm run dev
 ```
 
-Abre [http://localhost:5173](http://localhost:5173).
-
 ## Producción
 
 ```bash
@@ -18,12 +16,24 @@ npm run build
 npm run preview
 ```
 
+## Contenido
+
+Todo el texto y datos viven en `src/data/info.js`.
+
 ## Estructura
 
-- `src/components/` — Header, HeroTitle, Description, Signature, SocialLinks, DecorativePanel, LaptopMockup
-- `src/App.module.css` — layout de dos columnas (responsive)
-
-## Personalizar
-
-- Enlaces sociales: `src/components/SocialLinks/SocialLinks.jsx`
-- Colores y fuentes: `src/index.css` (`:root`)
+```text
+src/
+  data/info.js
+  components/
+    Nav.jsx
+    Hero.jsx
+    About.jsx
+    Experience.jsx
+    Projects.jsx
+    Contact.jsx
+    Footer.jsx
+  App.jsx
+  App.css
+  main.jsx
+```
