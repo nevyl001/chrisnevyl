@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.chris {
+  color: var(--text);
+}
+
+.nevyl {
+  color: var(--accent-violet);
+}
+
+.arrows {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  color: var(--accent-violet);
+  font-weight: 700;
+  font-size: 1rem;
+  animation: slideRight 1.8s ease-in-out infinite;
+}
+
+.chevrons {
+  letter-spacing: -0.05em;
+}
+
+.arrow {
+  font-size: 1.1rem;
+}
+
+.divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 1.25rem;
+}
+
+@keyframes slideRight {
+  0%,
+  100% {
+    transform: translateX(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+}

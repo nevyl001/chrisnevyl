@@ -1,0 +1,37 @@
+.description {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.iconCircle {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.codeIcon {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-violet);
+  letter-spacing: -0.05em;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding-top: 0.35rem;
+}
+
+.text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  line-height: 1.5;
+}

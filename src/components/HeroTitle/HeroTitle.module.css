@@ -1,0 +1,59 @@
+.hero {
+  width: 100%;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.eyebrowLine {
+  display: block;
+  width: 56px;
+  height: 1px;
+  background: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: clamp(2.75rem, 14vw, 6.5rem);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  animation: fadeUp 1s ease forwards;
+}
+
+.gradientLine {
+  height: 3px;
+  margin-top: 1.25rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent-alt), var(--accent-violet));
+  width: 0;
+  max-width: min(320px, 85%);
+  animation: drawLine 1.4s ease 0.35s forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawLine {
+  to {
+    width: 100%;
+  }
+}
