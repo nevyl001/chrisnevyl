@@ -524,6 +524,10 @@ img {
 }
 
 /* ─── Projects ─── */
+.projects .section-title {
+  max-width: none;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -73,6 +73,11 @@ export const experience = [
   },
 ];
 
+export const projectsSection = {
+  tag: 'Proyectos',
+  title: 'Experiencia destacada',
+};
+
 export const projects = [
   {
     num: '01',

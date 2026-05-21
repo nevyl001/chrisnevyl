@@ -1,10 +1,10 @@
-import { projects } from '../data/info';
+import { projects, projectsSection } from '../data/info';
 
 export default function Projects() {
   return (
     <section id="projects" className="section projects reveal">
-      <span className="section-tag">Proyectos</span>
-      <h2 className="section-title">Trabajo seleccionado</h2>
+      <span className="section-tag">{projectsSection.tag}</span>
+      <h2 className="section-title">{projectsSection.title}</h2>
 
       <div className="projects-grid">
         {projects.map((project) => (
