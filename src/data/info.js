@@ -36,6 +36,12 @@ export const about = {
 
 export const experience = [
   {
+    period: '2024–Hoy',
+    role: 'Desarrollador Web',
+    company: 'Belicona.mx',
+    desc: 'Sitio web, catálogo y presencia digital de la marca en belicona.mx.',
+  },
+  {
     period: '2023–2024',
     role: 'Desarrollador Web',
     company: 'Polygon',
@@ -48,6 +54,12 @@ export const experience = [
     desc: 'Liderazgo del producto web, arquitectura frontend desde cero.',
   },
   {
+    period: '2019–Hoy',
+    role: 'Freelance Developer',
+    company: 'Independiente',
+    desc: 'Sitios web, ecommerce, landing pages para clientes diversos.',
+  },
+  {
     period: '2019–2020',
     role: 'Front-end Developer',
     company: 'Grupo Salinas',
@@ -58,18 +70,6 @@ export const experience = [
     role: 'Web Designer',
     company: 'Trendsetera',
     desc: "Sitios para Adidas, Buchanan's, Krispy Kreme y DiDi Food.",
-  },
-  {
-    period: '2019–Hoy',
-    role: 'Freelance Developer',
-    company: 'Independiente',
-    desc: 'Sitios web, ecommerce, landing pages para clientes diversos.',
-  },
-  {
-    period: '2024–Hoy',
-    role: 'Desarrollador Web',
-    company: 'Belicona.mx',
-    desc: 'Sitio web, catálogo y presencia digital de la marca en belicona.mx.',
   },
 ];
 
