@@ -265,6 +265,7 @@ export const education = [
 
 export const contact = {
   title: '¿Trabajamos juntos?',
+  titleLines: ['¿Trabajamos', 'juntos?'],
   text: 'Cuéntame sobre tu proyecto. Respondo en menos de 48 horas.',
 };
 

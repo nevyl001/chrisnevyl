@@ -19,7 +19,7 @@
   --font-display: 'Syne', system-ui, sans-serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
   --fs-hero: clamp(2.25rem, 2.6vw + 0.7rem, 3.05rem);
-  --fs-contact: clamp(2.5rem, 4.5vw, 4.75rem);
+  --fs-contact: clamp(2.05rem, 6.5vw, 4.25rem);
   --fs-h2: clamp(1.75rem, 3.2vw, 2.85rem);
   --fs-h3: clamp(1.35rem, 2vw, 1.85rem);
   --fs-body: 1rem;

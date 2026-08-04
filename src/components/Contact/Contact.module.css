@@ -2,21 +2,27 @@
   position: relative;
   border-top: 1px solid var(--border);
   padding-bottom: clamp(4.5rem, 10vw, 7rem);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .inner {
   position: relative;
   z-index: 1;
-  max-width: 38rem;
+  max-width: min(38rem, 100%);
+  min-width: 0;
 }
 
 .title {
   font-size: var(--fs-contact);
-  line-height: 0.96;
-  letter-spacing: -0.04em;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
   margin: 0.85rem 0 1.1rem;
-  max-width: 11ch;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.titleLine {
+  display: block;
 }
 
 .text {
@@ -25,6 +31,22 @@
   font-size: 1.05rem;
   max-width: 36ch;
   margin-bottom: 1.75rem;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: clamp(1.85rem, 9vw, 2.35rem);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .channels {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .channels {

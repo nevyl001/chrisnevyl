@@ -22,7 +22,11 @@ export default function Contact() {
             Contacto
           </motion.p>
           <motion.h2 className={`display ${styles.title}`} variants={fadeUpSoft}>
-            {contact.title}
+            {contact.titleLines.map((line) => (
+              <span key={line} className={styles.titleLine}>
+                {line}
+              </span>
+            ))}
           </motion.h2>
           <motion.p className={styles.text} variants={fadeUpSoft}>
             {contact.text}
