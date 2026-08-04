@@ -1,0 +1,96 @@
+.contact {
+  position: relative;
+  border-top: 1px solid var(--border);
+  padding-bottom: clamp(4.5rem, 10vw, 7rem);
+  overflow: hidden;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 38rem;
+}
+
+.title {
+  font-size: var(--fs-contact);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  margin: 0.85rem 0 1.1rem;
+  max-width: 11ch;
+}
+
+.text {
+  color: var(--text-muted);
+  font-weight: 300;
+  font-size: 1.05rem;
+  max-width: 36ch;
+  margin-bottom: 1.75rem;
+}
+
+.channels {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text);
+  max-width: max-content;
+}
+
+.whatsapp strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.whatsapp em {
+  display: block;
+  margin-top: 0.15rem;
+  font-style: normal;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.whatsapp:hover strong {
+  color: var(--cyan);
+}
+
+.email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  border-bottom: 1px solid transparent;
+  max-width: max-content;
+  word-break: break-word;
+  transition:
+    color var(--dur-fast) ease,
+    border-color var(--dur-fast) ease;
+}
+
+.email:hover {
+  color: var(--text);
+  border-bottom-color: rgba(94, 231, 255, 0.35);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.handle {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}

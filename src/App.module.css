@@ -1,0 +1,11 @@
+.shell {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.shellMain {
+  position: relative;
+  z-index: var(--z-content);
+  padding-top: var(--nav-h);
+}

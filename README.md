@@ -1,6 +1,6 @@
 # Chris Nevyl — Portfolio
 
-Portfolio personal de una sola página con **Vite + React** y **CSS puro** (sin Tailwind).
+Portafolio personal single-page con **Vite + React**, CSS Modules, **Motion** y **lucide-react**.
 
 ## Desarrollo
 
@@ -25,15 +25,21 @@ Todo el texto y datos viven en `src/data/info.js`.
 ```text
 src/
   data/info.js
+  lib/hooks.js
+  lib/motion.js
+  styles/base.css
+  styles/animations.css
   components/
-    Nav.jsx
-    Hero.jsx
-    About.jsx
-    Experience.jsx
-    Projects.jsx
-    Contact.jsx
-    Footer.jsx
+    ui/AnimatedAuroraBackground.*
+    Nav/
+    Hero/
+    About/
+    Projects/
+    Experience/
+    Skills/
+    Education/
+    Contact/
+    Footer/
   App.jsx
-  App.css
   main.jsx
 ```

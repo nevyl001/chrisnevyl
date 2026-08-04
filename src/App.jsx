@@ -1,49 +1,43 @@
-import { useEffect } from 'react';
-import './App.css';
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { useEffect, useState } from 'react';
+import styles from './App.module.css';
+import SiteAtmosphere from './components/atmosphere/SiteAtmosphere';
+import Nav from './components/Nav/Nav';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
+import Education from './components/Education/Education';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
-    const elements = document.querySelectorAll('.reveal');
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    );
-
-    elements.forEach((el) => {
-      if (!el.classList.contains('revealed')) {
-        observer.observe(el);
-      }
-    });
-
-    return () => observer.disconnect();
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('section') || window.location.hash.replace('#', '');
+    if (!id) return undefined;
+    const timer = window.setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }, 300);
+    return () => window.clearTimeout(timer);
   }, []);
 
   return (
-    <>
-      <Nav />
-      <main>
+    <div className={styles.shell}>
+      <SiteAtmosphere />
+      <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <main className={styles.shellMain}>
         <Hero />
         <About />
-        <Experience />
         <Projects />
+        <Experience />
+        <Skills />
+        <Education />
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
